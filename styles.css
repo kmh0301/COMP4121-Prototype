@@ -1,0 +1,410 @@
+:root {
+  --main-color: #404245;
+  --link-inital-color: #a8977b;
+  --link-hover-color: #80705c;
+  --white-text-color: #ffffff;
+  --link-grey: #d0d0d0;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*About font*/
+h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+  font-size: 5rem;
+}
+h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(71, 71, 71);
+  font-size: 3rem;
+}
+
+h3 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(71, 71, 71);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(71, 71, 71);
+}
+
+p {
+  color: rgb(76, 76, 76);
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.1rem;
+  line-height: normal;
+}
+
+.myname {
+  color: #ffb703;
+}
+
+.ps-content {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  color: #ffffff !important;
+}
+.ps-description {
+  color: var(--link-grey);
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.7rem;
+}
+
+#homePage {
+  background-image: url(./img/2.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Related to navbar */
+.navbar .navbar-nav .nav-link {
+  font-size: large;
+}
+
+.navbar-brand img {
+  width: 80px;
+  height: 80px;
+}
+
+.navbar {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease-in-out;
+  border-bottom: #dfdfdf4f 1px solid !important;
+  padding: 10px 10px;
+}
+
+.navbar-scrolled {
+  background-color: #545454 !important;
+}
+
+.navbarme a {
+  color: var(--link-grey) !important ;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  padding-left: 20px;
+}
+
+.navbarme a:hover {
+  color: rgb(240, 191, 29) !important ;
+  text-decoration: underline;
+}
+
+.navbarme a:active {
+  color: green !important ;
+  text-decoration: underline;
+}
+
+.nav-link {
+  padding: 0px 20px 0px 20px !important;
+}
+
+/* Related to navbar social media buttons */
+.sm-icons svg {
+  flex-direction: row;
+  color: var(--link-grey);
+}
+
+.sm-icons svg :hover {
+  color: var(--link-hover-color);
+}
+.sm-icons svg :active {
+  color: var(--white-text-color);
+}
+
+.sm-icons .nav-link {
+  padding-right: 1em;
+}
+
+/*Home Page Container*/
+.homepage-container {
+  padding-top: 15% !important;
+}
+
+.homepage-container img {
+  width: 400px; /* Adjust the width and height as needed */
+  height: 400px;
+  border-radius: 50%;
+  overflow: hidden; /* This is important to clip the image within the circle */
+}
+
+/* Buttons */
+.commonButton {
+  padding: 1em 1.5em 1em 1.5em;
+  background-color: #ffb703;
+  color: white !important;
+  border-radius: 30px !important;
+  border: #a8977b;
+  font-weight: bold;
+}
+
+/*What is my Intrest? Page */
+#interestPageContainer {
+  background-image: url(./img/backgroundimage3.png);
+  background-size: cover;
+  background-position: center;
+  margin-top: 1rem;
+  display: block;
+  padding-top: 110px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.text-center {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.col-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.borderline {
+  border: 1px solid #545454;
+}
+.interestCard {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.56);
+  -webkit-box-shadow: 0px 0px 14px 5px rgba(90, 90, 90, 0.356);
+  -moz-box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.56);
+  border-radius: 20px 20px 20px 20px !important;
+  margin-left: 2rem;
+}
+
+.interestDec {
+  margin-top: 2rem;
+}
+.play-button2 {
+  color: #292929;
+  background-color: #ffffff;
+  font-size: 20px;
+  border: 6px solid #ffd773;
+  border-radius: 500px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.play-button2:hover {
+  color: #ffffff;
+  background-color: #124982;
+}
+
+#lookatThem {
+  display: flex;
+  text-align: center;
+  justify-content: center !important;
+  align-items: center;
+}
+
+#lookatThem button {
+  background: rgb(80, 85, 88);
+  background: linear-gradient(
+    90deg,
+    rgba(80, 85, 88, 1) 0%,
+    rgba(139, 129, 119, 1) 100%
+  ); /*00537a*/
+  width: fit-content;
+  height: fit-content;
+  padding: 20px 40px 20px 40px;
+  border-radius: 100px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#lookatThem p,
+span {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+}
+
+.guppyvideodiv {
+  height: 300px !important;
+  width: 500px;
+  background-color: #fff9e2;
+}
+/*Skill Page */
+
+#skillpage {
+  margin-top: 1rem;
+  display: block;
+  padding-top: 120px;
+  margin-top: -102px;
+}
+
+#HTMLCSS {
+  background-color: #df473c !important;
+}
+#JAVASCRIPT {
+  background-color: #f3c33c !important;
+}
+#BOOTSTRAP {
+  background-color: #255e79 !important;
+}
+#WORDPRESS {
+  background-color: #267778 !important;
+}
+#PHOTOSHOP {
+  background-color: #82b4bb !important;
+}
+#CANVAS {
+  background-color: #ae3c60 !important;
+}
+.text-info {
+  color: #404245 !important;
+  font-size: 3rem;
+}
+
+.progress {
+  margin-top: 0.5rem;
+}
+
+/*About Me Page*/
+#ABoutMePageContainer {
+  /* global 92%+ browsers support */
+  background-image: url(./img/backgroundimage2.png);
+  background-size: cover !important;
+  background-position: center;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 1rem;
+  display: block;
+  padding-top: 110px;
+}
+#AboutMePage {
+}
+
+.img-responsive-aboutme {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px,
+    rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px,
+    rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+#shortVideoText {
+  color: #ffb703;
+}
+
+.shortVideodescrp {
+  font-size: 3rem;
+}
+
+.play-button {
+  color: #292929;
+  background-color: #ffffff;
+  font-size: 20px;
+  border: 6px solid #124982;
+  border-radius: 500px;
+  padding: 15px 50px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.play-button:hover {
+  color: #ffffff;
+  background-color: #ffd773;
+}
+
+.video-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.video-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-container iframe {
+  width: 560px;
+  height: 315px;
+}
+
+/*Responsive styles*/
+
+/* Screens narrower than 360px */
+@media only screen and (max-width: 359px) {
+  .homepage-container {
+    padding-top: 25% !important;
+    padding-left: 10%;
+  }
+  .play-button {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Screens between 360px and 575px */
+@media only screen and (max-width: 575px) and (min-width: 360px) {
+  .homepage-container {
+    padding-top: 35% !important;
+    padding-left: 10%;
+  }
+  .play-button {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Screens between 576px and 899px */
+@media only screen and (max-width: 899px) and (min-width: 576px) {
+  .homepage-container {
+    padding-top: 25% !important;
+    padding-left: 10%;
+  }
+  .play-button {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Screens between 900px and 1249px */
+@media only screen and (max-width: 1249px) and (min-width: 900px) {
+  .homepage-container {
+    padding-top: 25% !important;
+    padding-left: 10%;
+  }
+
+  .img-responsive-aboutme {
+    transform: translateX(0);
+  }
+}

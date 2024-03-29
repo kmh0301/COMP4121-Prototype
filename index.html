@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>22017676d KO Man Hei Personal Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&family=Roboto+Mono:ital@0;1&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            id="navbar-logo"
+            src="./img/Mr.KO Black icon.png"
+            alt="Mr.KO Black icon.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse navbarme justify-content-center"
+          id="navbarNavAltMarkup navbarToggleExternalContent"
+        >
+          <div class="navbar-nav">
+            <a
+              class="nav-link active"
+              aria-current="/index.html"
+              href="#homePage"
+              >HOME</a
+            >
+            <a class="nav-link" href="#ABoutMePageContainer">ABOUT ME</a>
+            <a class="nav-link" href="#interestPageContainer">MY INTEREST</a>
+            <a class="nav-link" href="#skillpage">PROFESSIONAL SKILL</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid testing vh-100" id="homePage">
+      <div class="container-xl homepage-container">
+        <div class="row">
+          <div class="col-xl-6">
+            <p class="ps-content">WELCOME TO MY WORLD</p>
+            <h1>Hi, I'm <span class="myname">KO Man Hei</span></h1>
+            <br />
+            <p class="ps-description">
+              Records are the Mirrors that reflect our past and serve as
+              catalysts for self-improvement in the present
+            </p>
+            <button
+              onclick="scrollToAboutMe()"
+              class="commonButton"
+              id="homePageButton"
+            >
+              Know me More!
+            </button>
+          </div>
+          <div class="col-xl-5 text-center">
+            <img class="img-fluid" src="./img/PersonalImage.jpg" alt="myIcon" />
+          </div>
+        </div>
+      </div>
+      <canvas class="background-interest"></canvas>
+    </div>
+
+    <div class="container-fluid vh-100" id="ABoutMePageContainer">
+      <div id="AboutMePage">
+        <div class="container-xxl">
+          <div class="row">
+            <h2 class="text-center">Who is Me ?</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-lg-6 text-center">
+              <img
+                src="./img/personalImage2.png"
+                class="img-responsive-aboutme"
+                alt="Responsive image"
+              />
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="row">
+                <div class="col">
+                  <h3>I AM A POLY STUDENT</h3>
+                  <p>
+                    I am a student at Hong Kong Polytechnic University, pursuing
+                    a degree in Computer Science. I am passionate about
+                    exploring the field of technology and its applications. With
+                    a strong foundation in programming and problem-solving.
+                  </p>
+                  <p>
+                    I am excited to contribute to the evolving world of software
+                    development. Graduating in 2024/25, I am eager to embark on
+                    a career that allows me to make a positive impact in the
+                    tech industry.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="shortVideodescrp">
+                    I prepared a <span id="shortVideoText">short video</span> to
+                    briefly introduce myself
+                  </p>
+                  <button class="btn btn-primary play-button">
+                    Click to Play
+                  </button>
+
+                  <div id="video-popup" class="video-popup">
+                    <div class="video-container">
+                      <iframe
+                        id="video-iframe"
+                        src="img/selfintroduction.mp4"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid vh-100" id="interestPageContainer">
+      <div id="interestPage">
+        <div class="container-xxl">
+          <div class="row">
+            <h2 class="text-center">What is my Interest ?</h2>
+          </div>
+          <div class="row" id="interestDescption">
+            <div class="col-md-12 col-lg-6 interestDescp">
+              <div class="row">
+                <h3>RASING GUPPY</h3>
+                <p>
+                  I breed guppies with great care,produce the next generation in
+                  a favorable environment , and even sell them to other guppy
+                  lovers.
+                </p>
+                <p>
+                  Through my record about guppies, I felt a sense of
+                  accomplishment when watching them grow day by day. I also
+                  found my interest and cultivated a sense of responsibility in
+                  this process.
+                </p>
+                <div class="row borderline"></div>
+                <div class="row">
+                  <p class="shortVideodescrp">
+                    I prepared a <span id="shortVideoText">short video</span> to
+                    watch THEM
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6 guppyvideodiv">
+              <div class="row">
+                <div class="col-md-12 interestCard guppyvideodiv">
+                  <video id="guppyvideo" width="100%" height="100%" loop>
+                    <source src="./img/guppyvideo.mp4" />
+                  </video>
+                </div>
+              </div>
+              <div class="row interestDec">
+                <button
+                  onclick="playVideo()"
+                  class="btn btn-primary play-button"
+                >
+                  Click to Platy!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-xxl vh-100" id="skillpage">
+      <div class="jubotron">
+        <h1 class="text-center text-info">My Professional Skills</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-lg-6">
+          <img src="./img/workimgagew.png" alt="" class="img-thumbnail" />
+        </div>
+        <div class="col-md-12 col-lg-6">
+          <p class="text-muted">
+            As a web developer, my target job is to design, develop, and
+            maintain websites that are visually appealing, user-friendly, and
+            functional. I aim to utilize my skills in HTML, CSS, JavaScript, and
+            other web technologies to create seamless and engaging online
+            experiences.
+          </p>
+          <h4>Programming Language</h4>
+          <div class="mb-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-filetype-html"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"
+              />
+            </svg>
+            <lable class="skill-subtitle">HTML & CSS</lable>
+            <div class="progress">
+              <div
+                class="progress-bar bg-info"
+                id="HTMLCSS"
+                style="width: 80%"
+                role="progressbar"
+                aria-valuenow="80"
+                aria-valuemin="0"
+              >
+                80%
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-filetype-js"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.186 15.29a1.2 1.2 0 0 1-.111-.449h.765a.58.58 0 0 0 .255.384q.105.073.249.114.143.041.319.041.246 0 .413-.07a.56.56 0 0 0 .255-.193.5.5 0 0 0 .085-.29.39.39 0 0 0-.153-.326q-.151-.12-.462-.193l-.619-.143a1.7 1.7 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.1 1.1 0 0 1-.123-.524q0-.366.19-.639.19-.272.528-.422.336-.15.776-.149.457 0 .78.152.324.153.5.41.18.255.2.566h-.75a.56.56 0 0 0-.12-.258.6.6 0 0 0-.247-.181.9.9 0 0 0-.369-.068q-.325 0-.513.152a.47.47 0 0 0-.184.384q0 .18.143.3a1 1 0 0 0 .405.175l.62.143q.327.075.566.211.24.136.375.358t.135.56q0 .37-.188.656a1.2 1.2 0 0 1-.539.439q-.351.158-.858.158-.381 0-.665-.09a1.4 1.4 0 0 1-.478-.252 1.1 1.1 0 0 1-.29-.375m-3.104-.033A1.3 1.3 0 0 1 0 14.791h.765a.6.6 0 0 0 .073.27.5.5 0 0 0 .454.246q.285 0 .422-.164.138-.165.138-.466v-2.745h.79v2.725q0 .66-.357 1.005-.354.345-.984.345a1.6 1.6 0 0 1-.569-.094 1.15 1.15 0 0 1-.407-.266 1.1 1.1 0 0 1-.243-.39"
+              />
+            </svg>
+            <lable class="skill-subtitle">JAVASCRIPT</lable>
+            <div class="progress">
+              <div
+                class="progress-bar bg-info"
+                id="JAVASCRIPT"
+                style="width: 70%"
+                role="progressbar"
+                aria-valuenow="70"
+                aria-valuemin="0"
+              >
+                70%
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-bootstrap-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z"
+              />
+              <path
+                d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z"
+              />
+            </svg>
+            <lable class="skill-subtitle">BOOTSTRAP</lable>
+            <div class="progress">
+              <div
+                class="progress-bar bg-info"
+                style="width: 50%"
+                id="BOOTSTRAP"
+                role="progressbar"
+                aria-valuenow="100"
+                aria-valuemin="50"
+              >
+                50%
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-wordpress"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218q.03 0 .058.003l.031.003A6.84 6.84 0 0 0 8 1.137 6.86 6.86 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.86 6.86 0 0 0 3.868 6.176L1.73 5.206A6.8 6.8 0 0 0 1.137 8"
+              />
+              <path
+                d="M6.061 14.583 8.121 8.6l2.109 5.78q.02.05.049.094a6.85 6.85 0 0 1-4.218.109m7.96-9.876q.046.328.047.706c0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M0 8c0-4.411 3.589-8 8-8s8 3.589 8 8-3.59 8-8 8-8-3.589-8-8m.367 0c0 4.209 3.424 7.633 7.633 7.633S15.632 12.209 15.632 8C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8"
+              />
+            </svg>
+            <lable class="skill-subtitle">WORDPRESS</lable>
+            <div class="progress">
+              <div
+                class="progress-bar bg-info"
+                id="WORDPRESS"
+                style="width: 50%"
+                role="progressbar"
+                aria-valuenow="50"
+                aria-valuemin="50"
+              >
+                50%
+              </div>
+            </div>
+          </div>
+          <h4>Design</h4>
+          <div class="mb-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-camera"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z"
+              />
+              <path
+                d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"
+              />
+            </svg>
+            <lable class="skill-subtitle">PHOTOSHOP</lable>
+            <div class="progress">
+              <div
+                class="progress-bar bg-info"
+                id="PHOTOSHOP"
+                style="width: 30%"
+                role="progressbar"
+                aria-valuenow="30"
+                aria-valuemin="50"
+              >
+                30%
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-brush"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.1 6.1 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.1 8.1 0 0 1-3.078.132 4 4 0 0 1-.562-.135 1.4 1.4 0 0 1-.466-.247.7.7 0 0 1-.204-.288.62.62 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896q.19.012.348.048c.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04M4.705 11.912a1.2 1.2 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.4 3.4 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3 3 0 0 0 .126-.75zm1.44.026c.12-.04.277-.1.458-.183a5.1 5.1 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005zm3.582-3.043.002.001h-.002z"
+              />
+            </svg>
+            <lable class="skill-subtitle">Canvas</lable>
+            <div class="progress">
+              <div
+                class="progress-bar bg-info"
+                id="CANVAS"
+                style="width: 70%"
+                role="progressbar"
+                aria-valuenow="70"
+                aria-valuemin="50"
+              >
+                30%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="path/to/particles.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
